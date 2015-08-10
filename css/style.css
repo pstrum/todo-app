@@ -1,0 +1,232 @@
+/* Web Fonts -------------------- */
+
+@font-face {
+	font-family: 'Roboto Slab', serif;
+}
+
+/* General -------------------- */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: #302525;
+	background: #D6E9FF;
+	margin: 0;
+	font: 1em/1.5 "helvetica neue", helvetica, arial, sans-serif;
+}
+
+h1, h2 {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	display: inline;
+	vertical-align: top;
+}
+
+h1 {
+	font-size: 2.25rem; /** 36px/16px **/
+	line-height: 1.1;
+	margin: 0;
+}
+
+h2 {
+	font-size: 1.5rem; /** 36px/16px **/
+	line-height: 1;
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+ul {
+	padding: 0;
+	margin: 14px 0;
+}
+
+li {
+  list-style:none;
+}
+
+input {
+	border: none;
+	font-family: inherit;
+	width: 85%;
+}
+
+input:focus {
+	outline: none;
+}
+
+input[type="checkbox"] {
+    width: 5%;
+    margin-top: 20px;
+    vertical-align: top;
+    line-height: 1;
+}
+
+button {
+	background: none;
+	border: 0px;
+	color: #9A9898;
+	font-size: 15px;
+	width: 15%;
+	margin: 10px 0 0;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	cursor: pointer;
+	float: right;
+}
+
+/* Main --------------------- */
+
+#wrapper {
+	width: 70%;
+	margin: auto;
+}
+
+#emptyWarning p {
+	font: inherit;
+	font-size: 1.65em;
+	line-height: 1;
+	font-weight: 100;
+	padding: 30px 0 0 5px;
+	margin: 0;
+}
+
+#createTask {
+	display: none;
+}
+
+#taskList {
+	background: #fff;
+	padding: 1em;
+	width: 65%;
+	margin: 10% auto;
+/*	float: right;*/
+	box-shadow: 0px 2px 8px 0px rgba(43,43,43,0.50);
+	border-radius: 8px;
+}
+
+#taskList input {
+	font-size: 2rem;
+	font-weight: 100;
+	background: #F1F1F1;
+}
+
+#taskList #tasks {
+	list-style: none;
+}
+
+#taskList .eachTask {
+	padding: 15px 20px 5px 0;
+	position: relative;
+	font-size: 2em;
+	font-weight: 100;
+	border-bottom: 1px solid #D4D4D4;
+}
+
+#taskList label.newTask {
+	display: inline-block;
+	width: 65%;
+	line-height: 1;
+	margin-left: 5px;
+}
+
+#taskList .eachTask .delete {
+	display: inline-block;
+	margin-top: 6px;
+	color: #ff0000;
+	height: 31px;
+	width: 31px;
+	background-image: url(../img/deleteMobile.png);
+	background-repeat: no-repeat;
+}
+
+#taskList .eachTask .delete:hover {
+  	background-position: 0px -31px;
+}
+
+.editTask {
+	width: 65%;
+	margin-left: 5px;
+}
+
+label.taskChecked {
+	text-decoration: line-through;
+	color: #ccc;
+}
+
+#clearTasks {
+	display: none;
+}
+
+#clearTasks button {
+	width: 50%;
+	font-size: 1.25em;
+	line-height: 1;
+	letter-spacing: .1em;
+	font-weight: 100;
+	color: #302525;
+	margin: 17px 0 2px;
+	cursor: pointer;
+	clear: both;
+}
+
+.addButton {
+	background-image: url(../img/addIcon.png);
+	display: inline-block;
+	float: right;
+	height: 36px;
+	width: 36px;
+	cursor: pointer;
+}
+
+#addTaskButton {
+}
+
+.addButtonHover {
+	background-image: url(../img/addIconHover.png);
+	position: relative;
+	left: 390px;
+	top: -30px;
+	height: 36px;
+	width: 36px;
+	cursor: pointer;
+}
+
+/* Media Queries -------------------- */
+
+@media (max-width: 1150px) {
+  #taskList {
+    width: 75%;
+  }
+}
+
+@media (max-width: 850px) {
+  input[type="checkbox"] {
+  	margin-top: 12px;
+  }
+  button {
+  	margin: 3px 0 0;
+  }
+  #taskList {
+    width: 100%;
+  }
+  #taskList .eachTask{
+  	font-size: 1.5em;
+  }
+  #taskList .eachTask .delete {
+  	margin-top: 3px;
+	height: 26px;
+	width: 26px;
+	background-image: url(../img/deleteMobilesmaller.png);
+	background-repeat: no-repeat;
+  }
+  #taskList .eachTask .delete:hover {
+  	background-position: 0px -26px;
+  }
+  #taskList input {
+  	font-size: 1.5rem;
+  }
+  #clearTasks button {
+	font-size: 1em;
+}

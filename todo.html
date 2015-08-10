@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300' rel='stylesheet' type='text/css'>
+		<meta content="character encoding" charset="utf-8">
+		<title>Todo List</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width">
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="taskList">
+				<h1>Todo List</h1>
+				<div class="addButton" id="addTaskButton"></div>
+				<div class="inputTaskField">
+					<p id="createTask">
+						<input type="text" id="addTask" name="task-name" placeholder="New task">
+						<button id="closeTask">Close</button>
+					</p>
+				</div>
+				<ul id="tasks"></ul>
+				<div id="emptyWarning">
+					<p>No items. Click + to add an item.</p>
+				</div>
+				<div id="clearTasks">
+					<button id="clearTasksButton">clear completed tasks</button>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	</body>
+</html>
